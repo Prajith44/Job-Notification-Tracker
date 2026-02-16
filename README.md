@@ -16,12 +16,30 @@ See [DESIGN-SYSTEM.md](./DESIGN-SYSTEM.md) for complete design specifications.
 
 ```
 JobwebApp/
-├── index.html              # Main application preview
+├── index.html              # Main application with routing
+├── app.js                  # Routing system (hash-based)
 ├── base-styles.css         # Design system implementation
 ├── design-tokens.css       # CSS custom properties
 ├── DESIGN-SYSTEM.md        # Design system documentation
 └── README.md              # This file
 ```
+
+## Features
+
+### Route Skeleton (Current Implementation)
+
+The application includes a complete routing system with the following routes:
+- `/` or `/dashboard` - Dashboard page
+- `/saved` - Saved jobs page
+- `/digest` - Digest page
+- `/settings` - Settings page
+- `/proof` - Proof page
+
+**Navigation Features:**
+- Top navigation bar with active link highlighting (deep red underline)
+- Responsive hamburger menu for mobile devices (≤768px)
+- Hash-based routing for static site compatibility
+- Each route displays a placeholder page with serif heading and subtext
 
 ## Running Locally
 
