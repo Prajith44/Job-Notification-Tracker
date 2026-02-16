@@ -24,3 +24,8 @@ build/
 # Environment files
 .env
 .env.local
+
+# Test and diagnostic files
+test.html
+diagnostic.html
+PREVIEW.md
